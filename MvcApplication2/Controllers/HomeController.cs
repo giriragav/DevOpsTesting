@@ -57,7 +57,7 @@ namespace MVCImportExcel.Controllers
 
                 foreach (Cell cell in rows.ElementAt(0))
                 {
-                    dt.Columns.Add(GetCellValue(sDoc, cell));
+                    dt.Columns.Add(GetCellValue(sDoc, cell));//Try
                 }
                 
                 foreach (Row row in rows) //this will also include your header row...
